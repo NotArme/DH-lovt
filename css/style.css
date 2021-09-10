@@ -6,10 +6,11 @@ body {
     font-family: 'Ropa Sans', sans-serif;
 }
 
+/* HEADER STUFF */
+
 header {
     text-align: center;
     width: auto;
-    margin: 0;
     padding: 0 35px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
     display: flex;
@@ -44,4 +45,78 @@ header h2 {
     margin: 0;
     padding: 0 5px;
 
+}
+
+header img {
+    width: 30px;
+}
+
+/* ------------- */
+
+section.content {
+    margin: 10px 15vw;
+}
+
+
+section.banner img{
+    width: 100%;
+    padding: 10px 0;
+}
+
+/* LISTINGS */
+
+section.listings {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.listings article {
+    background-color: #eeeeee;
+    width: 30vw;
+    min-width: 200px;
+}
+
+section.listings article div {
+    padding: 10%;
+}
+
+section.listings article div div {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.listings article p {
+    color: #555555;
+}
+
+section.listings article img {
+    width: 100%;
+}
+
+.price {
+    color: #888888;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+}
+
+.new, .sale {
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    width: 5rem;
+    justify-content: center;
+    color: #ffffff;
+    border-radius: 10vw;
+}
+
+.new {
+    background: #51d275;
+}
+
+.sale {
+    background: #dc9730;
 }
