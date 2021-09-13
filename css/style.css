@@ -69,6 +69,7 @@ section.listings {
     padding: 15px 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 section.listings article {
@@ -175,3 +176,44 @@ section.listings article img {
 }
 
 /* -------------- */
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+footer div {
+    padding: 25px 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div div:nth-child(2){
+    padding: 10px 150px;
+    display: flex;
+    flex-direction: column;
+    line-height: 150%;
+}
+
+footer div div:nth-child(2) p {
+    margin: 0;
+}
+
+footer div div:nth-child(2) p:last-of-type {
+    margin: 10% 0 0 0;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+footer div div:nth-child(2) ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 5px 0 0 0;
+    width: 130px;
+}
+
+footer div div:nth-child(2) ul li img{
+    width: 25px;
+}
