@@ -199,6 +199,11 @@ footer div div:nth-child(2) p {
     margin: 0;
 }
 
+footer div div:nth-child(2) a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 footer div div:nth-child(2) p:last-of-type {
     margin: 10% 0 0 0;
     line-height: 100%;
