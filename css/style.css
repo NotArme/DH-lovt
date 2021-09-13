@@ -121,29 +121,57 @@ section.listings article img {
     background: #dc9730;
 }
 
+
+
+/* STYLE  */
+
 .style {
     display: flex;
     width: 100%;
-    height: 400px;
+    height: 50vw;
     justify-content: space-around;
     text-align: center;
     flex-direction: column;
 }
 
+.style .industrial, .style .modern, .style .classic {
+    height: 80px;
+    background-size: cover;
+    width: 100%;
+    height: 10.075vw;
+    line-height: 10.075vw;
+}
+
+.style h2 {
+    margin: 0;
+    padding: 0;
+    font-size: clamp(4vw, 25px, 10vw);
+    color: #ffffff;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.55);
+}
+
+.style .op-bg {
+    background-color: rgba(111, 111, 111, 0.5);
+}
+
+.style > h2 {
+    text-shadow: none;
+    color: #888888;
+}
+
 .style .industrial {
     background-image: url('../img/industrial.png');
-
-    opacity: 0.4;
+    
 }
 
 .style .modern {
     background-image: url('../img/modern.png');
 
-    opacity: 0.4;
 }
 
 .style .classic {
     background-image: url('../img/classic.png');
 
-    opacity: 0.4;
 }
+
+/* -------------- */
