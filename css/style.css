@@ -77,6 +77,7 @@ section.listings article {
     border-radius: 10px;
     width: 30vw;
     min-width: 200px;
+    margin: 1em;
 }
 
 section.listings article div {
@@ -181,6 +182,8 @@ section.listings article img {
 footer {
     background-color: #333333;
     color: #ffffff;
+    height: fit-content;
+    padding: 20px 0;
 }
 
 footer div {
@@ -237,7 +240,7 @@ footer div div:nth-child(2) ul li img{
 footer .map{
     width: fit-content;
     margin: 0 auto;
-    
+    padding: 0;
     height: 10rem;
 }
 
@@ -245,4 +248,23 @@ footer .map iframe{
     height: clamp(10vw, 200px, 100%);;
     width: clamp(20vw, 300px, 80vw);
     border-radius: 10px;
+}
+
+@media (max-width: 769px) {
+    section.content {
+        margin: 0;
+    }
+
+    .style .industrial, .style .modern, .style .classic {
+        height: 100%;
+        margin: 10px 0;
+    }
+    .style {
+        height: fit-content;
+    }
+
+    .style h2 {
+        padding: 1.5rem 0;
+    }
+
 }
