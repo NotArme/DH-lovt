@@ -68,12 +68,13 @@ section.banner img{
 section.listings {
     padding: 15px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 section.listings article {
     background-color: #eeeeee;
+    border-radius: 10px;
     width: 30vw;
     min-width: 200px;
 }
@@ -183,20 +184,30 @@ footer {
 }
 
 footer div {
+    margin: auto;
     padding: 25px 35px;
     display: flex;
+    width: 80%;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
+footer div div:nth-child(1){
+    align-self: flex-start;
+}
+
 footer div div:nth-child(2){
-    padding: 10px 150px;
+    padding: 10px 10px;
+    justify-self: right;
     display: flex;
     flex-direction: column;
     line-height: 150%;
+    width: fit-content;
+    line-height: 0;
 }
 
 footer div div:nth-child(2) p {
-    margin: 0;
+    margin: 10px 0;
 }
 
 footer div div:nth-child(2) a {
@@ -221,4 +232,17 @@ footer div div:nth-child(2) ul {
 
 footer div div:nth-child(2) ul li img{
     width: 25px;
+}
+
+footer .map{
+    width: fit-content;
+    margin: 0 auto;
+    
+    height: 10rem;
+}
+
+footer .map iframe{
+    height: clamp(10vw, 200px, 100%);;
+    width: clamp(20vw, 300px, 80vw);
+    border-radius: 10px;
 }
